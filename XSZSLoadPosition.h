@@ -25,7 +25,6 @@
 
 - (instancetype)init;
 
-+ (instancetype)sharedPosition;
 
 //获取当前位置
 - (void)LoadCurrentPosition;

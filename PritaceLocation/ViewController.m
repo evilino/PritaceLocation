@@ -55,7 +55,7 @@
 
 - (void)startLoadPosition {
     
-    XSZSLoadPosition *positionManager = [XSZSLoadPosition sharedPosition];
+    XSZSLoadPosition *positionManager = [[XSZSLoadPosition alloc] init];
     
     positionManager.positionDelegate = self;
     [positionManager LoadCurrentPosition];

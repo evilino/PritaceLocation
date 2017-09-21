@@ -25,27 +25,6 @@
 
 @implementation XSZSLoadPosition
 
-+(instancetype)sharedPosition {
-    
-    return [[self alloc] init];
-}
-
-+(instancetype)allocWithZone:(struct _NSZone *)zone {
-    
-    static XSZSLoadPosition *position;
-    
-    static dispatch_once_t onceTaken;
-    
-    dispatch_once(&onceTaken, ^{
-       
-        position = [super allocWithZone:zone];
-    });
-    
-    return position;
-    
-}
-
-
 
 - (instancetype)init {
     
